@@ -4,8 +4,6 @@ metadata:
   name: simple-sink
   labels:
     app: simple-sink
-#  annotations:
-#    sidecar.istio.io/inject: "false"
 spec:
   containers:
   - name: sink
@@ -24,5 +22,5 @@ spec:
     app: simple-sink
   ports:
   - protocol: TCP
-    port: 8080
+    port: 80
     targetPort: 8080
